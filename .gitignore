@@ -1,0 +1,38 @@
+# ── Credentials: never commit these ──────────────────────────────────────────
+# The panel reads its keys from $DSH_HOME/.credentials.yaml (default
+# ~/.dsh/.credentials.yaml), which is deliberately *outside* this checkout.
+# These patterns are a backstop for the case where someone copies it in.
+.credentials.yaml
+.credentials.yml
+credentials.yaml
+credentials.yml
+*.credentials.yaml
+.env
+.env.*
+secrets/
+*.pem
+*.key
+key.json
+service-account*.json
+GCP-Connection/
+
+# ── Runtime state written next to the panel ─────────────────────────────────
+window.json
+dsh.json
+widget.log
+*.log
+*.xwd
+
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ── Backups and editor leftovers ────────────────────────────────────────────
+*.bak
+*.bak-*
+*.orig
+*.rej
+*~
+.DS_Store
